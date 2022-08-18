@@ -484,11 +484,11 @@ export const links = [
     title: 'Pages',
     links: [
       {
-        name: 'orders',
+        name: 'rides',
         icon: <AiOutlineShoppingCart />,
       },
       {
-        name: 'employees',
+        name: 'drivers',
         icon: <IoMdContacts />,
       },
       {
