@@ -1,9 +1,9 @@
-export { default as Ecommerce } from './Ecommerce';
+export { default as Analytics } from './Analytics';
 export { default as Kanban } from './Kanban';
 export { default as Rides } from './Rides';
 export { default as Drivers } from './Drivers';
 export { default as Editor } from './Editor';
-export { default as Customers } from './Customers';
+export { default as Buddies } from './Buddies';
 export { default as ColorPicker } from './ColorPicker';
 export { default as Calendar } from './Calendar';
 export { default as Area } from './Charts/Area';
