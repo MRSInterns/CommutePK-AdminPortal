@@ -398,7 +398,7 @@ export const customersGrid = [
     template: customerGridImage,
     textAlign: 'Center' },
   { field: 'ProjectName',
-    headerText: 'Project Name',
+    headerText: 'Type',
     width: '150',
     textAlign: 'Center' },
   { field: 'Status',
@@ -501,11 +501,11 @@ export const links = [
     title: 'Charts',
     links: [
       {
-        name: 'line',
+        name: 'rides-profit',
         icon: <AiOutlineStock />,
       },
       {
-        name: 'color-mapping',
+        name: 'monthly-profit',
         icon: <BsBarChart />,
       },
     ],

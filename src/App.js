@@ -80,8 +80,8 @@ const App = () => {
                 <Route path="/color-picker" element={<ColorPicker />} />
 
                 {/* charts  */}
-                <Route path="/line" element={<Line />} />
-                <Route path="/color-mapping" element={<ColorMapping />} />
+                <Route path="/rides-profit" element={<Line />} />
+                <Route path="/monthly-profit" element={<ColorMapping />} />
 
               </Routes>
             </div>
