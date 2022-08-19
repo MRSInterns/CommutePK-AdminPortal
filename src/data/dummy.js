@@ -323,17 +323,17 @@ export const colorMappingData = [
 ];
 
 export const rangeColorMapping = [
-  { label: '1°C to 10°C',
+  { label: '1k to 10k',
     start: '1',
     end: '10',
     colors: colorMappingData[1] },
 
-  { label: '11°C to 20°C',
+  { label: '11k to 20k',
     start: '11',
     end: '20',
     colors: colorMappingData[2] },
 
-  { label: '21°C to 30°C',
+  { label: '21k to 30k',
     start: '21',
     end: '30',
     colors: colorMappingData[3] },
@@ -350,8 +350,8 @@ export const ColorMappingPrimaryYAxis = {
   lineStyle: { width: 0 },
   majorTickLines: { width: 0 },
   minorTickLines: { width: 0 },
-  labelFormat: '{value}°C',
-  title: 'Temperature',
+  labelFormat: '{value}k',
+  title: 'Profit per Months',
 };
 
 export const FinancialPrimaryXAxis = {
@@ -381,11 +381,11 @@ export const LinePrimaryXAxis = {
 };
 
 export const LinePrimaryYAxis = {
-  labelFormat: '{value}%',
+  labelFormat: '{value}k',
   rangePadding: 'None',
   minimum: 0,
-  maximum: 100,
-  interval: 20,
+  maximum: 1000,
+  interval: 100,
   lineStyle: { width: 0 },
   majorTickLines: { width: 0 },
   minorTickLines: { width: 0 },
@@ -498,27 +498,6 @@ export const links = [
     ],
   },
   {
-    title: 'Apps',
-    links: [
-      {
-        name: 'calendar',
-        icon: <AiOutlineCalendar />,
-      },
-      {
-        name: 'kanban',
-        icon: <BsKanban />,
-      },
-      {
-        name: 'editor',
-        icon: <FiEdit />,
-      },
-      {
-        name: 'color-picker',
-        icon: <BiColorFill />,
-      },
-    ],
-  },
-  {
     title: 'Charts',
     links: [
       {
@@ -526,33 +505,8 @@ export const links = [
         icon: <AiOutlineStock />,
       },
       {
-        name: 'area',
-        icon: <AiOutlineAreaChart />,
-      },
-
-      {
-        name: 'bar',
-        icon: <AiOutlineBarChart />,
-      },
-      {
-        name: 'pie',
-        icon: <FiPieChart />,
-      },
-      {
-        name: 'financial',
-        icon: <RiStockLine />,
-      },
-      {
         name: 'color-mapping',
         icon: <BsBarChart />,
-      },
-      {
-        name: 'pyramid',
-        icon: <GiLouvrePyramid />,
-      },
-      {
-        name: 'stacked',
-        icon: <AiOutlineBarChart />,
       },
     ],
   },
@@ -3041,32 +2995,32 @@ export const scheduleData = [
 
 export const lineChartData = [
   [
-    { x: new Date(2005, 0, 1), y: 21 },
-    { x: new Date(2006, 0, 1), y: 24 },
-    { x: new Date(2007, 0, 1), y: 36 },
-    { x: new Date(2008, 0, 1), y: 38 },
-    { x: new Date(2009, 0, 1), y: 54 },
-    { x: new Date(2010, 0, 1), y: 57 },
-    { x: new Date(2011, 0, 1), y: 70 },
+    { x: new Date(2020, 0, 1), y: 21 },
+    { x: new Date(2021, 0, 1), y: 24 },
+    { x: new Date(2022, 0, 1), y: 36 },
+    { x: new Date(2023, 0, 1), y: 38 },
+    { x: new Date(2024, 0, 1), y: 54 },
+    { x: new Date(2025, 0, 1), y: 57 },
+    { x: new Date(2026, 0, 1), y: 70 },
   ],
   [
-    { x: new Date(2005, 0, 1), y: 28 },
-    { x: new Date(2006, 0, 1), y: 44 },
-    { x: new Date(2007, 0, 1), y: 48 },
-    { x: new Date(2008, 0, 1), y: 50 },
-    { x: new Date(2009, 0, 1), y: 66 },
-    { x: new Date(2010, 0, 1), y: 78 },
-    { x: new Date(2011, 0, 1), y: 84 },
+    { x: new Date(2020, 0, 1), y: 28 },
+    { x: new Date(2021, 0, 1), y: 44 },
+    { x: new Date(2022, 0, 1), y: 48 },
+    { x: new Date(2023, 0, 1), y: 50 },
+    { x: new Date(2024, 0, 1), y: 660 },
+    { x: new Date(2025, 0, 1), y: 780},
+    { x: new Date(2026, 0, 1), y: 840 },
   ],
 
   [
-    { x: new Date(2005, 0, 1), y: 10 },
-    { x: new Date(2006, 0, 1), y: 20 },
-    { x: new Date(2007, 0, 1), y: 30 },
-    { x: new Date(2008, 0, 1), y: 39 },
-    { x: new Date(2009, 0, 1), y: 50 },
-    { x: new Date(2010, 0, 1), y: 70 },
-    { x: new Date(2011, 0, 1), y: 100 },
+    { x: new Date(2020, 0, 1), y: 10 },
+    { x: new Date(2021, 0, 1), y: 20 },
+    { x: new Date(2022, 0, 1), y: 30 },
+    { x: new Date(2023, 0, 1), y: 390 },
+    { x: new Date(2024, 0, 1), y: 500 },
+    { x: new Date(2025, 0, 1), y: 700 },
+    { x: new Date(2026, 0, 1), y: 1000 },
   ],
 ];
 export const dropdownData = [
@@ -3095,7 +3049,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Germany',
+    name: 'Islamabad',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
@@ -3103,7 +3057,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'England',
+    name: 'Lahore',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
@@ -3111,7 +3065,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[2],
     xName: 'x',
     yName: 'y',
-    name: 'India',
+    name: 'Karachi',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
