@@ -434,39 +434,49 @@ export const customersGrid = [
 ];
 
 export const employeesGrid = [
-  { headerText: 'Employee',
-    width: '150',
-    template: gridEmployeeProfile,
-    textAlign: 'Center' },
-  { field: 'Name',
-    headerText: '',
+  { field: 'ID',
+    headerText: 'ID',
     width: '0',
     textAlign: 'Center',
   },
-  { field: 'Title',
-    headerText: 'Designation',
+  { field: 'Name',
+    headerText: 'Name',
     width: '170',
     textAlign: 'Center',
   },
-  { headerText: 'Country',
+  { field:'Gender',
+    headerText: 'Gender',
     width: '120',
     textAlign: 'Center',
-    template: gridEmployeeCountry },
+   },
 
-  { field: 'HireDate',
-    headerText: 'Hire Date',
+  { field: 'Email',
+    headerText: 'Email',
     width: '135',
     format: 'yMd',
     textAlign: 'Center' },
 
-  { field: 'ReportsTo',
-    headerText: 'Reports To',
+  { field: 'DOB',
+    headerText: 'DOB',
     width: '120',
     textAlign: 'Center' },
-  { field: 'EmployeeID',
-    headerText: 'Employee ID',
+  { field: 'PhoneNo',
+    headerText: 'PhoneNo',
     width: '125',
     textAlign: 'Center' },
+  { field: 'CNIC',
+    headerText: 'CNIC',
+    width: '125',
+    textAlign: 'center' },
+    { field: 'LicenseNO',
+    headerText: 'LicenseNO',
+    width: '125',
+    textAlign: 'Center' },
+    { field: 'Address',
+    headerText: 'Address',
+    width: '125',
+    textAlign: 'Center' }
+    
 ];
 
 export const links = [
@@ -905,26 +915,32 @@ export const customersData = [
 
 export const employeesData = [
   {
-    EmployeeID: 1,
-    Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    ID: 1,
+    Name: 'Salar Abbass',
+    Gender: 'Male',
+    Email:"salarabbass2000@gmail.com",
+    DOB:"24-Aug-2000",
+    PhoneNo:"03115099100",
+    CNIC:"61101-5549537-3",
     HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar3,
+    LicenseNO:"611100",
+    Address:"House no 337 Ravi Road G-8/2 Islamabad"
+  
   },
   {
-    EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
-    Title: 'Marketing Head',
+    ID: 2,
+    Name: 'Nasika Ijaz',
+    Gender: 'Female',
+    Email:"nasika2000@gmail.com",
+    DOB:"24-Aug-2020",
+    PhoneNo:"031156699100",
+    CNIC:"61101-5500537-3",
     HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar3,
-  },
- 
+    LicenseNO:"611102",
+    Address:"House no 340 Ravi Road G-8/2 Islamabad"
+  
+  }
+
 ];
 
 export const RideData = [
