@@ -6,6 +6,7 @@ import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
 import { Analytics, Rides, Calendar, Drivers, Buddies, Kanban, Line, ColorPicker, ColorMapping, Editor } from './pages';
 import './App.css';
 import { useStateContext } from './contexts/ContextProvider';
+
 const App = () => {
   const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
   useEffect(() => {
