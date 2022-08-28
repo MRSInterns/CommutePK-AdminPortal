@@ -1,5 +1,5 @@
 {
-  "name": "CommutePK - Admin Dashboard",
+  "name": "CommutePKAdminDashboard",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
