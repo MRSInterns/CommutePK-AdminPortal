@@ -1,5 +1,5 @@
 import React from 'react';
-import {  AiFillCar, AiFillDashboard } from 'react-icons/ai';
+import { AiFillCar, AiFillDashboard } from 'react-icons/ai';
 import { FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
 import { BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 import { IoMdContacts } from 'react-icons/io';
@@ -7,7 +7,6 @@ import { RiContactsLine } from 'react-icons/ri';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
-import { GrLocation } from 'react-icons/gr';
 import avatar from './avatar.jpg';
 import avatar2 from './avatar2.jpg';
 import avatar3 from './avatar3.png';
@@ -415,7 +414,7 @@ export const employeesGrid = [
     width: '170',
     textAlign: 'Center',
   },
-  { field:'Gender',
+  { field: 'Gender',
     headerText: 'Gender',
     width: '120',
     textAlign: 'Center',
@@ -425,28 +424,34 @@ export const employeesGrid = [
     headerText: 'Email',
     width: '135',
     format: 'yMd',
-    textAlign: 'Center' },
+    textAlign: 'Center' 
+  },
 
   { field: 'DOB',
     headerText: 'DOB',
     width: '120',
-    textAlign: 'Center' },
+    textAlign: 'Center' 
+  },
   { field: 'PhoneNo',
     headerText: 'PhoneNo',
     width: '125',
-    textAlign: 'Center' },
+    textAlign: 'Center' 
+  },
   { field: 'CNIC',
     headerText: 'CNIC',
     width: '125',
-    textAlign: 'center' },
+    textAlign: 'center'
+  },
   { field: 'LicenseNO',
     headerText: 'LicenseNO',
     width: '125',
-    textAlign: 'Center' },
+    textAlign: 'Center' 
+  },
   { field: 'Address',
     headerText: 'Address',
     width: '125',
-    textAlign: 'Center' }  
+    textAlign: 'Center'
+  }  
 ];
 export const links = [
   {
@@ -789,10 +794,10 @@ export const userProfileData = [
 
 export const ridesGrid = [
   {
-    field:'Rideid',
-    headerText:'Ride Id',
-    width:'150',
-    textAlign:'center',
+    field: 'Rideid',
+    headerText: 'Ride Id',
+    width: '150',
+    textAlign: 'center',
   },
   {
     field: 'Driverid',
@@ -807,8 +812,7 @@ export const ridesGrid = [
     width: '150',
     editType: 'dropdownedit',
     textAlign: 'Center',
-  }
-  ,
+  },
   { field: 'CustomerName',
     headerText: 'Customer Name',
     width: '150',
@@ -844,14 +848,12 @@ export const ridesGrid = [
   },
 ];
 
-
 export const customersData = [
   {
     CustomerID: 1001,
     CustomerName: 'Nirav Joshi',
     CustomerEmail: 'nirav@gmail.com',
-    CustomerImage:
-      avatar2,
+    CustomerImage: avatar2,
     ProjectName: 'Hosting Press HTML',
     Status: 'Active',
     StatusBg: '#8BE78B',
@@ -861,20 +863,16 @@ export const customersData = [
   },
   {
     CustomerID: 1002,
-
     CustomerName: 'Sunil Joshi',
     CustomerEmail: 'sunil@gmail.com',
     ProjectName: 'Elite Admin',
     Status: 'Active',
-    CustomerImage:
-      avatar3,
-
+    CustomerImage: avatar3,
     StatusBg: '#8BE78B',
     Weeks: '11',
     Budget: '$3.9k',
     Location: 'India',
   }
-
 ];
 
 export const employeesData = [
@@ -882,14 +880,13 @@ export const employeesData = [
     ID: 1,
     Name: 'Salar Abbass',
     Gender: 'Male',
-    Email:'salarabbass2000@gmail.com',
-    DOB:'24-Aug-2000',
+    Email: 'salarabbass2000@gmail.com',
+    DOB: '24-Aug-2000',
     PhoneNo: '03115099100',
-    CNIC:'61101-5549537-3',
+    CNIC: '61101-5549537-3',
     HireDate: '01/02/2021',
-    LicenseNO:'611100',
-    Address:'House no 337 Ravi Road G-8/2 Islamabad'
-  
+    LicenseNO: '611100',
+    Address: 'House no 337 Ravi Road G-8/2 Islamabad'  
   },
   {
     ID: 2,
@@ -902,21 +899,19 @@ export const employeesData = [
     HireDate: '01/02/2021',
     LicenseNO: '611102',
     Address: 'House no 340 Ravi Road G-8/2 Islamabad'
-  
   }
-
 ];
 export const RideData = [
   {
     Rideid: 1,
     Driverid: 1,
-    Poolid:1,
-    CustomerName:'Haroon Riasat',
-    TotalFare:385,
-    Status:'Completed',
+    Poolid: 1,
+    CustomerName: 'Haroon Riasat',
+    TotalFare: 385,
+    Status: 'Completed',
     StatusBg: 'green',
-    PickupLocation:'178,128',
-    DropLocation:'78,158'
+    PickupLocation: '178,128',
+    DropLocation: '78,158'
   }
 ];
 export const SparklineAreaData = [
