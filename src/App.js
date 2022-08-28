@@ -2,16 +2,12 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
 import { Analytics, Rides, Calendar, Drivers, Buddies, Kanban, Line, ColorPicker, ColorMapping, Editor } from './pages';
 import './App.css';
-
 import { useStateContext } from './contexts/ContextProvider';
-
 const App = () => {
   const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
-
   useEffect(() => {
     const currentThemeColor = localStorage.getItem('colorMode');
     const currentThemeMode = localStorage.getItem('themeMode');
@@ -20,7 +16,6 @@ const App = () => {
       setCurrentMode(currentThemeMode);
     }
   }, []);
-
   return (
     <div className={currentMode === 'Dark' ? 'dark' : ''}>
       <BrowserRouter>
@@ -38,7 +33,6 @@ const App = () => {
               >
                 <FiSettings />
               </button>
-
             </TooltipComponent>
           </div>
           {activeMenu ? (
@@ -62,27 +56,22 @@ const App = () => {
             </div>
             <div>
               {themeSettings && (<ThemeSettings />)}
-
               <Routes>
                 {/* dashboard  */}
                 <Route path="/" element={(<Analytics />)} />
                 <Route path="/analytics" element={(<Analytics />)} />
-
                 {/* pages  */}
                 <Route path="/rides" element={<Rides />} />
                 <Route path="/drivers" element={<Drivers />} />
                 <Route path="/buddies" element={<Buddies />} />
- 
                 {/* apps  */}
                 <Route path="/kanban" element={<Kanban />} />
                 <Route path="/editor" element={<Editor />} />
                 <Route path="/calendar" element={<Calendar />} />
                 <Route path="/color-picker" element={<ColorPicker />} />
-
                 {/* charts  */}
                 <Route path="/rides-profit" element={<Line />} />
                 <Route path="/monthly-profit" element={<ColorMapping />} />
-
               </Routes>
             </div>
             <Footer />
