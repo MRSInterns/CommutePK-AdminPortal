@@ -1,27 +1,21 @@
 import React from 'react';
-import { AiOutlineCalendar, AiFillCar,AiFillDashboard,AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
-import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
-import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
-import { BiColorFill } from 'react-icons/bi';
+import {  AiFillCar, AiFillDashboard } from 'react-icons/ai';
+import { FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
+import { BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 import { IoMdContacts } from 'react-icons/io';
-import { RiContactsLine, RiStockLine } from 'react-icons/ri';
+import { RiContactsLine } from 'react-icons/ri';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
-import { GiLouvrePyramid } from 'react-icons/gi';
 import { GrLocation } from 'react-icons/gr';
 import avatar from './avatar.jpg';
 import avatar2 from './avatar2.jpg';
 import avatar3 from './avatar3.png';
 import avatar4 from './avatar4.jpg';
-import product1 from './product1.jpg';
-import product2 from './product2.jpg';
-import product3 from './product3.jpg';
 import product4 from './product4.jpg';
 import product5 from './product5.jpg';
 import product6 from './product6.jpg';
 import product7 from './product7.jpg';
-import product8 from './product8.jpg';
 
 export const gridOrderImage = (props) => (
   <div>
@@ -61,23 +55,7 @@ export const kanbanGrid = [
     keyField: 'Close',
     allowToggle: true },
 ];
-const gridEmployeeProfile = (props) => (
-  <div className="flex items-center gap-2">
-    <img
-      className="rounded-full w-10 h-10"
-      src={props.EmployeeImage}
-      alt="employee"
-    />
-    <p>{props.Name}</p>
-  </div>
-);
 
-const gridEmployeeCountry = (props) => (
-  <div className="flex items-center justify-center gap-2">
-    <GrLocation />
-    <span>{props.Country}</span>
-  </div>
-);
 export const EditorData = () => (
   <div>
     <h3>
@@ -339,13 +317,11 @@ export const rangeColorMapping = [
     colors: colorMappingData[3] },
 
 ];
-
 export const ColorMappingPrimaryXAxis = {
   valueType: 'Category',
   majorGridLines: { width: 0 },
   title: 'Months',
 };
-
 export const ColorMappingPrimaryYAxis = {
   lineStyle: { width: 0 },
   majorTickLines: { width: 0 },
@@ -353,7 +329,6 @@ export const ColorMappingPrimaryYAxis = {
   labelFormat: '{value}°C',
   title: 'Temperature',
 };
-
 export const FinancialPrimaryXAxis = {
   valueType: 'DateTime',
   minimum: new Date('2016, 12, 31'),
@@ -370,7 +345,6 @@ export const FinancialPrimaryYAxis = {
   lineStyle: { width: 0 },
   majorTickLines: { width: 0 },
 };
-
 export const LinePrimaryXAxis = {
   valueType: 'DateTime',
   labelFormat: 'y',
@@ -379,7 +353,6 @@ export const LinePrimaryXAxis = {
   majorGridLines: { width: 0 },
   background: 'white',
 };
-
 export const LinePrimaryYAxis = {
   labelFormat: '{value}%',
   rangePadding: 'None',
@@ -390,7 +363,6 @@ export const LinePrimaryYAxis = {
   majorTickLines: { width: 0 },
   minorTickLines: { width: 0 },
 };
-
 export const customersGrid = [
   { type: 'checkbox', width: '50' },
   { headerText: 'Name',
@@ -432,7 +404,6 @@ export const customersGrid = [
   },
 
 ];
-
 export const employeesGrid = [
   { field: 'ID',
     headerText: 'ID',
@@ -468,17 +439,15 @@ export const employeesGrid = [
     headerText: 'CNIC',
     width: '125',
     textAlign: 'center' },
-    { field: 'LicenseNO',
+  { field: 'LicenseNO',
     headerText: 'LicenseNO',
     width: '125',
     textAlign: 'Center' },
-    { field: 'Address',
+  { field: 'Address',
     headerText: 'Address',
     width: '125',
-    textAlign: 'Center' }
-    
+    textAlign: 'Center' }  
 ];
-
 export const links = [
   {
     title: 'Dashboard',
@@ -489,7 +458,6 @@ export const links = [
       },
     ],
   },
-
   {
     title: 'Pages',
     links: [
@@ -507,10 +475,7 @@ export const links = [
       },
     ],
   },
-
-
 ];
-
 export const cartData = [
   {
     image:
@@ -534,7 +499,6 @@ export const cartData = [
     price: '$190',
   },
 ];
-
 export const chatData = [
   {
     image:
@@ -918,48 +882,43 @@ export const employeesData = [
     ID: 1,
     Name: 'Salar Abbass',
     Gender: 'Male',
-    Email:"salarabbass2000@gmail.com",
-    DOB:"24-Aug-2000",
-    PhoneNo:"03115099100",
-    CNIC:"61101-5549537-3",
+    Email:'salarabbass2000@gmail.com',
+    DOB:'24-Aug-2000',
+    PhoneNo: '03115099100',
+    CNIC:'61101-5549537-3',
     HireDate: '01/02/2021',
-    LicenseNO:"611100",
-    Address:"House no 337 Ravi Road G-8/2 Islamabad"
+    LicenseNO:'611100',
+    Address:'House no 337 Ravi Road G-8/2 Islamabad'
   
   },
   {
     ID: 2,
     Name: 'Nasika Ijaz',
     Gender: 'Female',
-    Email:"nasika2000@gmail.com",
-    DOB:"24-Aug-2020",
-    PhoneNo:"031156699100",
-    CNIC:"61101-5500537-3",
+    Email: 'sika2000@gmail.com',
+    DOB: '4-Aug-2020',
+    PhoneNo: '1156699100',
+    CNIC: '101-5500537-3',
     HireDate: '01/02/2021',
-    LicenseNO:"611102",
-    Address:"House no 340 Ravi Road G-8/2 Islamabad"
+    LicenseNO: '611102',
+    Address: 'House no 340 Ravi Road G-8/2 Islamabad'
   
   }
 
 ];
-
 export const RideData = [
   {
     Rideid: 1,
     Driverid: 1,
     Poolid:1,
-    CustomerName:"Haroon Riasat",
+    CustomerName:'Haroon Riasat',
     TotalFare:385,
-    Status:"Completed",
+    Status:'Completed',
     StatusBg: 'green',
-    PickupLocation:"178,128",
-    DropLocation:"178,158",
+    PickupLocation:'178,128',
+    DropLocation:'78,158'
   }
 ];
-
-
-
-
 export const SparklineAreaData = [
   { x: 1, yval: 2 },
   { x: 2, yval: 6 },
@@ -968,17 +927,12 @@ export const SparklineAreaData = [
   { x: 5, yval: 10 },
 
 ];
-
-
-
-
 export const ecomPieChartData = [
   { x: '2018', y: 18, text: '35%' },
   { x: '2019', y: 18, text: '15%' },
   { x: '2020', y: 18, text: '25%' },
   { x: '2021', y: 18, text: '25%' },
 ];
-
 export const stackedChartData = [
   [
     { x: 'Jan', y: 111.1 },
@@ -999,7 +953,6 @@ export const stackedChartData = [
     { x: 'July', y: 159.9 },
   ],
 ];
-
 export const stackedCustomSeries = [
 
   { dataSource: stackedChartData[0],
@@ -1044,4 +997,3 @@ export const stackedPrimaryYAxis = {
   minorTickLines: { width: 0 },
   labelFormat: '{value}',
 };
-
