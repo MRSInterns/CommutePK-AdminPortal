@@ -1,7 +1,7 @@
 import React from 'react';
 import { GridComponent, ColumnsDirective, ColumnDirective, Resize, Sort, ContextMenu, Filter, Page, ExcelExport, PdfExport, Edit, Inject } from '@syncfusion/ej2-react-grids';
 
-import { RideData,ridesGrid } from '../data/dummy1'
+import { RideData,ridesGrid } from '../data/dummy1';
 import { contextMenuItems } from '../data/dummy';
 import { Header } from '../components';
 
