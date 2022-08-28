@@ -424,34 +424,34 @@ export const employeesGrid = [
     headerText: 'Email',
     width: '135',
     format: 'yMd',
-    textAlign: 'Center' 
+    textAlign: 'Center',
   },
 
   { field: 'DOB',
     headerText: 'DOB',
     width: '120',
-    textAlign: 'Center' 
+    textAlign: 'Center',
   },
   { field: 'PhoneNo',
     headerText: 'PhoneNo',
     width: '125',
-    textAlign: 'Center' 
+    textAlign: 'Center',
   },
   { field: 'CNIC',
     headerText: 'CNIC',
     width: '125',
-    textAlign: 'center'
+    textAlign: 'center',
   },
   { field: 'LicenseNO',
     headerText: 'LicenseNO',
     width: '125',
-    textAlign: 'Center' 
+    textAlign: 'Center',
   },
   { field: 'Address',
     headerText: 'Address',
     width: '125',
-    textAlign: 'Center'
-  }  
+    textAlign: 'Center',
+  },
 ];
 export const links = [
   {
@@ -468,7 +468,7 @@ export const links = [
     links: [
       {
         name: 'Rides',
-        icon: <AiFillCar/>,
+        icon: <AiFillCar />,
       },
       {
         name: 'Drivers',
@@ -872,7 +872,7 @@ export const customersData = [
     Weeks: '11',
     Budget: '$3.9k',
     Location: 'India',
-  }
+  },
 ];
 
 export const employeesData = [
@@ -886,7 +886,7 @@ export const employeesData = [
     CNIC: '61101-5549537-3',
     HireDate: '01/02/2021',
     LicenseNO: '611100',
-    Address: 'House no 337 Ravi Road G-8/2 Islamabad'  
+    Address: 'House no 337 Ravi Road G-8/2 Islamabad',
   },
   {
     ID: 2,
@@ -898,8 +898,8 @@ export const employeesData = [
     CNIC: '101-5500537-3',
     HireDate: '01/02/2021',
     LicenseNO: '611102',
-    Address: 'House no 340 Ravi Road G-8/2 Islamabad'
-  }
+    Address: 'House no 340 Ravi Road G-8/2 Islamabad',
+  },
 ];
 export const RideData = [
   {
@@ -911,8 +911,8 @@ export const RideData = [
     Status: 'Completed',
     StatusBg: 'green',
     PickupLocation: '178,128',
-    DropLocation: '78,158'
-  }
+    DropLocation: '78,158',
+  },
 ];
 export const SparklineAreaData = [
   { x: 1, yval: 2 },
