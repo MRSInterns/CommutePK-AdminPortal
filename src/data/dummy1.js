@@ -418,7 +418,7 @@ export const employeesGrid = [
     headerText: 'Gender',
     width: '120',
     textAlign: 'Center',
-   },
+  },
 
   { field: 'Email',
     headerText: 'Email',
