@@ -955,7 +955,7 @@ export const employeesData = [
   },
   {
     EmployeeID: 4,
-    Name: 'Penjani Inyene',
+    Name: 'Penjani Inyene!',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'USA',
